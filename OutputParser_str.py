@@ -26,7 +26,7 @@ model = ChatGroq(
 
 parser = StrOutputParser()
 
-chain = prompt | model | parser
+chain = prompt | model | parser # runnable
 
 result = chain.invoke({"topic": "AI"})
 print(result)
